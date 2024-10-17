@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #ced4da;
+            margin: 50px 150px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex; /* Flexbox for horizontal layout */
+            align-items: center; /* Center vertically */
+            margin-bottom: 20px; /* Space below the image and text */
+        }
+
+        #myimg {
+            border-radius: 50%;
+            padding-top: 20px;
+            margin-right: 20px; /* Space between image and text */
+            width: 250px; /* Consistent width */
+            height: 280px; /* Consistent height */
+        }
+
+        .box {
+            background-color: #343a40; /* Background color for the box */
+            padding: 20px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8); /* Increased shadow */
+            color: white; /* Text color */
+            border: 5px solid transparent; /* Initial transparent border */
+            animation: borderAnimation 2s infinite; /* Animation effect */
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-color: transparent;
+            }
+            25% {
+                border-color: gray;
+            }
+            50% {
+                border-color: silver;
+            }
+            75% {
+                border-color: black;
+            }
+            100% {
+                border-color: transparent;
+            }
+        }
+
+        .myinfo {
+            margin-right: 30px; /* Space after the info */
+            font-style: italic;
+            color: #e9ecef;
+        }
+
+        .maindiv {
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Center the buttons */
+            margin-top: 20px; /* Space above the buttons */
+        }
+
+        .button {
+            background-color: #adb5bd;
+            font-size: 25px;
+            border-radius: 10px;
+            padding: 10px 20px; /* Added padding for better button size */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer on hover */
+            margin: 0 10px; /* Space between buttons */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition for both color and scale */
+        }
+
+        .button:hover {
+            background-color: #6c757d; /* Darker color on hover */
+            transform: scale(1.1); /* Scale effect on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <img id="myimg" src="i.jpeg" alt="me">
+            <div class="myinfo">
+                <h1>Ronit Patel</h1>
+                <h4>Pursuing Bachelor's Degree in Computer Science<br>At RJ College</h4>
+                <h5>Contact:<br>ronitpatel124@gmail.com</h5>
+            </div>
+        </div>
+        
+        <div class="maindiv">
+            <a href="info.html">
+                <button class="button">Education</button>
+            </a>
+            <a href="cv.html">
+                <button class="button">Skills</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
